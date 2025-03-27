@@ -25,9 +25,7 @@ RUN pip install --upgrade pip \
 # Copy project
 COPY . /app/
 
+
 # Run gunicorn
-COPY entrypoint.sh /app/
-RUN chmod +x /app/entrypoint.sh
-ENTRYPOINT ["/app/entrypoint.sh"]
-# CMD ["gunicorn", "--bind", "0.0.0.0:8000", "config.wsgi:application"]
+# CMD ["gunicorn", "--bind", "0.0.0.0:8000", "config.wsgi:application"] 
 
