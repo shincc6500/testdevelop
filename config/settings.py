@@ -34,9 +34,9 @@ DEBUG = True
 ALLOWED_HOSTS =  ['*']
 # LOGOUT_REDIRECT_URL = "/"
 
-CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:3000",  # 프론트엔드 URL 추가
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://127.0.0.1:3000",  # 프론트엔드 URL 추가
+# ] #지워야 함. 
 # Application definition
 AUTH_USER_MODEL = 'users.CustomUser'
 INSTALLED_APPS = [
